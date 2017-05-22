@@ -20,6 +20,7 @@ h1,h2,h3,p,section {
 p {
 	margin-bottom: 10px;
 	border-bottom: dotted 1px #666666;
+	text-indent: 1em;
 }
 
 h2 {

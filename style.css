@@ -32,17 +32,10 @@ section {
 	margin-bottom: 2.0em;
 }
 
-section.circle {
+section.circular_box {
 	margin-top: -1.5em;
 	border: solid 1px #666666;
 	border-radius: 10px;
-}
-
-h2.incircle {
-	color: #333333;
-	font-size: 100%;
-	border-left: none;
-	border-bottom: none;
 }
 
 /* メインコンテナ */
@@ -53,16 +46,16 @@ h2.incircle {
 	text-align: left;
 }
 
-ul.inline {
+ul.oneline {
 	padding: 0px;
 	margin: 0px;
 }
 
-ul.inline li {
+ul.oneline li {
 	display: inline;
 }
 
-ul.inline li + li:before {
+ul.oneline li + li:before {
 	content: " | ";
 }
 
@@ -88,21 +81,23 @@ a:hover {
 	color: #0033ff;
 }
 
-/* 簡易フロート設定 */
-#float-left {
-	float: left;
-}
-
-#float-right {
-	float: right;
-}
-
-section.float-clear {
-	clear: both;
-}
-
 /* 画像マージン */
 img {
 	margin: 2px;
 	padding: 2px;
+}
+
+
+
+/* クラス */
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.float-clear {
+	clear: both;
 }

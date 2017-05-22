@@ -94,6 +94,10 @@ img {
 
 
 /* クラスやらIDやら */
+#page_title {
+	text-align: center;
+}
+
 #contents {
 	float: left;
 }
@@ -104,4 +108,5 @@ img {
 
 #author_info {
 	clear: both;
+	text-align: center;
 }

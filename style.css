@@ -84,8 +84,8 @@ img {
 }
 
 /* クラスやらIDやら */
-#main-container {
-	width: 804px;
+#main_container {
+	width: 1024px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -95,10 +95,12 @@ img {
 }
 
 #contents {
+	width: 200px;
 	float: left;
 }
 
 #main_text {
+	width: 800px;
 	float: right;
 }
 

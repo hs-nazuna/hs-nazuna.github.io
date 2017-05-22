@@ -93,15 +93,15 @@ img {
 
 
 
-/* クラス */
-.float-left {
+/* クラスやらIDやら */
+#contents {
 	float: left;
 }
 
-.float-right {
+#main_text {
 	float: right;
 }
 
-.float-clear {
+#author_info {
 	clear: both;
 }

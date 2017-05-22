@@ -9,7 +9,6 @@ body {
 	background: #FFFFFF; /* 背景 色 */
 	margin: 0px;
 	padding: 0px;
-	text-align: center;
 }
 
 /* 各種タグへのmargin,padding補正 */
@@ -42,13 +41,6 @@ section.circular_box {
 	border-radius: 10px;
 }
 
-/* メインコンテナ */
-#main-container {
-	width: 804px;
-	margin-right: auto;
-	margin-left: auto;
-	text-align: left;
-}
 
 ul.oneline {
 	padding: 0px;
@@ -91,9 +83,13 @@ img {
 	padding: 2px;
 }
 
-
-
 /* クラスやらIDやら */
+#main-container {
+	width: 804px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 #page_title {
 	text-align: center;
 }

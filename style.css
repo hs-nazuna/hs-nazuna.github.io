@@ -1,0 +1,108 @@
+@charset "shift_jis";
+
+/* 文書全体 */
+body {
+	font-family: "メイリオ","MS Pゴシック","ヒラギノ角ゴ Pro W3";
+	font-size: 100%; /* 文字サイズ */
+	line-height: 1.5; /* 行間 */
+	color: #666666; /* 文字色 */
+	background: #FFFFFF; /* 背景 色 */
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+/* 各種タグへのmargin,padding補正 */
+h1,h2,h3,p,section {
+	margin: 2px;
+	padding: 2px;
+}
+
+p {
+	margin-bottom: 10px;
+	border-bottom: dotted 1px #666666;
+}
+
+h2 {
+	border-left: solid 5px #0066ff;
+	border-bottom: solid 2px #0099ff;
+}
+
+section {
+	margin-bottom: 2.0em;
+}
+
+section.circle {
+	margin-top: -1.5em;
+	border: solid 1px #666666;
+	border-radius: 10px;
+}
+
+h2.incircle {
+	color: #333333;
+	font-size: 100%;
+	border-left: none;
+	border-bottom: none;
+}
+
+/* メインコンテナ */
+#main-container {
+	width: 804px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+}
+
+ul.inline {
+	padding: 0px;
+	margin: 0px;
+}
+
+ul.inline li {
+	display: inline;
+}
+
+ul.inline li + li:before {
+	content: " | ";
+}
+
+/* ヘッダー */
+header {
+	margin: 5px;
+	padding: 10px;
+}
+
+/* フッター */
+footer {
+	margin: 5px;
+	padding: 10px;
+}
+
+/* リンク全般 */
+a {
+	color: #0099ff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0033ff;
+}
+
+/* 簡易フロート設定 */
+#float-left {
+	float: left;
+}
+
+#float-right {
+	float: right;
+}
+
+section.float-clear {
+	clear: both;
+}
+
+/* 画像マージン */
+img {
+	margin: 2px;
+	padding: 2px;
+}

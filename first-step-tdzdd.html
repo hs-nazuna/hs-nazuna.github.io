@@ -9,6 +9,10 @@
 <meta name='description' content='TdZddマニュアル'/>
 <meta name='author' content='Hirofumi Suzuki' />
 <meta name='robots' content='index,follow' />
+
+
+
+<!-- Scripts -->
 <script type='text/javascript' src='fbs-menu.js'></script>
 
 <script type='text/x-mathjax-config'>
@@ -21,6 +25,11 @@ MathJax.Hub.Config({
 });
 </script>
 <script async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML'></script>
+
+<script src='https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js'></script>
+<!-- Scripts -->
+
+
 
 <title>TdZddの初歩</title>
 <link href='style.css' rel='stylesheet' type='text/css'/>
@@ -68,8 +77,30 @@ document.close();
 <h2>TdZddとは</h2>
 <p>
 TdZddは「ZDDのトップダウン構築」をサポートするC++ライブラリです。
-例えば、アイテム数$n$のZDDを構築するとしたら、
+実際のコードを見ながら説明するほうが早いので、まずは以下のサンプルコードを参照しながら説明します。
 </p>
+
+<pre><code class='prettyprint linenums'>
+class Combination : public tdzdd::DdSpec<Combination, int, 2> {
+	const int n;
+	const int k;
+public:
+	Combination(int __n, int __k) : n(__n), k(__k) {}
+	
+	int getRoot(int& cnt) {
+		cnt = 0;
+		return n;
+	}
+	
+	int getChild(int& cnt, int level, int take) const {
+		cnt += take;
+		if (cnt > k) return 0;
+		if (cnt + level - 1 < k) return 0;
+		--level;
+		return (level == 0) ? -1 : level;
+	}
+};
+</code></pre>
 
 </section>
 

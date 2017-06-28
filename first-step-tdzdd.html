@@ -74,12 +74,16 @@ document.close();
 
 <!-- 記事 -->
 <section>
+
 <h2>TdZddとは</h2>
 <p>
 TdZddは「ZDDのトップダウン構築」をサポートするC++ライブラリです。
-実際のコードを見ながら説明するほうが早いので、まずは以下のサンプルコードを参照しながら説明します。
+本サイト下部にダウンロードページ（GitHub）へのリンクを置いています。
 </p>
 
+<h2>TdZddの基本的な使い方</h2>
+<p>
+実際のコードを見ながら説明するのが一番だと考えているので、以下のサンプルコードを参照しながら説明します。
 <pre><code class="prettyprint linenums">
 #include &lt;iostream&gt;
 #include &lt;tdzdd/DdSpec.hpp&gt;
@@ -112,6 +116,18 @@ int main() {
 	std::cout &lt;&lt; dd.zddCardinality() &lt;&lt; std::endl;
 }
 </code></pre>
+</p>
+
+<h2>コンパイルについて</h2>
+<p>
+ダウンロードしたTdZdd-masterというフォルダ内には、includeというフォルダがあるはずです。
+コンパイル時にはincludeフォルダへのリンクを忘れずに行ってください。
+すなわち、コンパイルは
+<pre>
+g++ <g++ options> -I<includeフォルダ> -O3 -o main main.cpp
+</pre>
+のような形で行います。
+</p>
 
 </section>
 

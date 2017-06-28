@@ -81,7 +81,7 @@ TdZddは「ZDDのトップダウン構築」をサポートするC++ライブラ
 </p>
 
 <pre><code class='prettyprint linenums'>
-class Combination : public tdzdd::DdSpec<Combination, int, 2> {
+class Combination : public tdzdd::DdSpec&lt;Combination, int, 2&rt; {
 	const int n;
 	const int k;
 public:
@@ -94,8 +94,8 @@ public:
 	
 	int getChild(int& cnt, int level, int take) const {
 		cnt += take;
-		if (cnt > k) return 0;
-		if (cnt + level - 1 < k) return 0;
+		if (cnt &rt; k) return 0;
+		if (cnt + level - 1 &lt; k) return 0;
 		--level;
 		return (level == 0) ? -1 : level;
 	}

@@ -41,7 +41,6 @@ section.circular_box {
 	border-radius: 10px;
 }
 
-
 ul.oneline {
 	padding: 0px;
 	margin: 0px;
@@ -95,12 +94,12 @@ img {
 }
 
 #contents {
-	width: 200px;
+	width: 256px;
 	float: left;
 }
 
 #main_text {
-	width: 800px;
+	width: 750px;
 	float: right;
 }
 

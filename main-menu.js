@@ -8,6 +8,6 @@ menu += "<li><a href='tdzdd-manual/intro.html' target='_blank'>TdZddマニュア
 menu += "</ul>"
 menu += "<h2 class='no_border'>リンク</h2>";
 menu += "<ul>"
-menu += <li><a href='https://github.com/hs-nazuna' target='_blank'>鈴木のgithub</a></li>
+menu += "<li><a href='https://github.com/hs-nazuna' target='_blank'>鈴木のgithub</a></li>"
 menu += "</ul>"
 menu += "</div>"

@@ -81,6 +81,10 @@ TdZddは「ZDDのトップダウン構築」をサポートするC++ライブラ
 </p>
 
 <pre><code class="prettyprint linenums">
+#include &lt;iostream&gt;
+#include &lt;tdzdd/DdSpec.hpp&gt;
+#include &lt;tdzdd/DdStructure.hpp&gt;
+
 class Combination : public tdzdd::DdSpec&lt;Combination, int, 2&gt; {
 	const int n;
 	const int k;
@@ -100,6 +104,13 @@ public:
 		return (level == 0) ? -1 : level;
 	}
 };
+
+int main() {
+	Combination comb(10, 4);
+	tdzdd::DdStructure&lt; 2 &gt; dd(comb);
+	dd.zddReduce();
+	std::cout &lt;&lt; dd.zddCardinality() &lt;&lt; std::endl;
+}
 </code></pre>
 
 </section>

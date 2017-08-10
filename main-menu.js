@@ -1,13 +1,13 @@
 menu = " ";
 menu += "<div id='contents'>";
-menu += "<h2 class='no_border'>ã‚³ãƒ³ãƒ†ãƒ³ãƒ„</h2>";
+menu += "<h2 class='no_border'>ƒRƒ“ƒeƒ“ƒc</h2>";
 menu += "<ul>"
-menu += "<li><a href='index.html#profile'>ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«</a></li>"
-menu += "<li><a href='index.html#achievements'>æ¥­ç¸¾</a></li>"
-menu += "<li><a href='tdzdd-manual/intro.html' target='_blank'>TdZddãƒãƒ‹ãƒ¥ã‚¢ãƒ« ï¼ˆä½œæˆä¸­ï¼‰</a></li>"
+menu += "<li><a href='index.html#profile'>ƒvƒƒtƒB[ƒ‹</a></li>"
+menu += "<li><a href='index.html#achievements'>‹ÆÑ</a></li>"
+menu += "<li><a href='tdzdd-manual/intro.html' target='_blank'>TdZddƒ}ƒjƒ…ƒAƒ‹ iì¬’†j</a></li>"
 menu += "</ul>"
-menu += "<h2 class='no_border'>ãƒªãƒ³ã‚¯</h2>";
+menu += "<h2 class='no_border'>ƒŠƒ“ƒN</h2>";
 menu += "<ul>"
-menu += "<li><a href='https://github.com/hs-nazuna' target='_blank'>éˆ´æœ¨ã®github</a></li>"
+menu += "<li><a href='https://github.com/hs-nazuna' target='_blank'>—é–Ø‚Ìgithub</a></li>"
 menu += "</ul>"
 menu += "</div>"

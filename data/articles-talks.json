@@ -29,7 +29,7 @@
     },
     {
         "lang": "ja",
-        "type": "press",
+        "type": "article",
         "author": "鈴木 浩史",
         "title": "ECML-PKDD 2024 にて統計的因果探索の代表的モデル LiNGAM の高速な学習法 LayeredLiNGAM について発表しました",
         "where": "Fujitsu TECH BLOG",

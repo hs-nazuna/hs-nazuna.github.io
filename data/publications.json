@@ -17,18 +17,6 @@
     },
     {
         "lang": "en",
-        "type": "journal",
-        "author": "Hirofumi Suzuki and Shin-ichi Minato",
-        "title": "Fast Enumeration of All Pareto-Optimal Solutions for 0-1 Multi-Objective Knapsack Problems Using ZDDs",
-        "where": "IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences",
-        "year": "2018",
-        "month": "Sep",
-        "note": null,
-        "url": null,
-        "urls": null
-    },
-    {
-        "lang": "en",
         "type": "conference",
         "author": "Hirofumi Suzuki",
         "title": "LayeredLiNGAM: A Practical and Fast Method for Learning a Linear Non-gaussian Structural Equation Model",
@@ -140,6 +128,18 @@
         "urls": null
     },
     {
+        "lang": "en",
+        "type": "journal",
+        "author": "Hirofumi Suzuki and Shin-ichi Minato",
+        "title": "Fast Enumeration of All Pareto-Optimal Solutions for 0-1 Multi-Objective Knapsack Problems Using ZDDs",
+        "where": "IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences",
+        "year": "2018",
+        "month": "Sep",
+        "note": null,
+        "url": null,
+        "urls": null
+    },
+    {
         "lang": "ja",
         "type": "misc",
         "author": "鈴木浩史",
@@ -149,6 +149,18 @@
         "month": "3",
         "note": null,
         "url": null,
+        "urls": null
+    },
+    {
+        "lang": "en",
+        "type": "misc",
+        "author": "Hiroaki Iwashita, Takuya Takagi, Hirofumi Suzuki, Keisuke Goto, Kotaro Ohori, Hiroki Arimura",
+        "title": "Efficient Constrained Pattern Mining Using Dynamic Item Ordering for Explainable Classification",
+        "where": "arXiv, CoRR abs/2004.08015",
+        "year": "2020",
+        "month": "Apr",
+        "note": "Preprint",
+        "url": "https://arxiv.org/abs/2004.08015",
         "urls": null
     },
     {
@@ -304,18 +316,6 @@
         "year": "2015",
         "month": "3",
         "note": null,
-        "url": null,
-        "urls": null
-    },
-    {
-        "lang": "ja",
-        "type": "misc",
-        "author": "安田宜仁, 鈴木浩史, 岩下洋哲, 中澤吉男, 湊 真一",
-        "title": "ZDDに基づくグラフ列挙ツールGraphillionを用いたナンバーリンクの解法",
-        "where": "情報処理学会DAシンポジウム2014 アルゴリズムデザインコンテスト",
-        "year": "2014",
-        "month": "8",
-        "note": "ポスター",
         "url": null,
         "urls": null
     }

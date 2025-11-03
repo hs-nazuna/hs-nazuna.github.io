@@ -110,14 +110,6 @@ body {
 }
 
 /* ----------
- * 言語切り替えロジック
- * ---------- */
-html:lang(ja) [lang="en"] { display: none; }
-html:lang(ja) [lang="ja"] { display: inline-block; }
-html:lang(en) [lang="ja"] { display: none; }
-html:lang(en) [lang="en"] { display: inline-block; }
-
-/* ----------
  * ヘッダーとフッター
  * ---------- */
 .site-header {
@@ -157,7 +149,7 @@ html:lang(en) [lang="en"] { display: inline-block; }
 /* ----------
  * メインブロック
  * ---------- */
-main { background-color: #fff; }
+.main-content { background-color: #fff; }
 .container { padding: 10px 30px; }
 .container h2 {
     color: var(--primary-color);
@@ -175,6 +167,18 @@ main { background-color: #fff; }
     vertical-align: top;
     padding-right: 30px;
 }
+
+/* ----------
+ * 言語切り替えロジック
+ * ---------- */
+html:lang(ja) [lang="en"] { display: none; }
+html:lang(ja) [lang="ja"] { display: inline-block; }
+html:lang(en) [lang="ja"] { display: none; }
+html:lang(en) [lang="en"] { display: inline-block; }
+html:lang(ja) .container li[lang="ja"] { display: block; }
+html:lang(en) .container li[lang="en"] { display: block; }
+html:lang(ja) .container tr[lang="ja"] { display: table-row; }
+html:lang(en) .container tr[lang="en"] { display: table-row; }
 
 /* ----------
  * スマートフォン用レイアウト (768px以下)

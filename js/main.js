@@ -1,13 +1,19 @@
-// ページの読み込みが完了したら実行
-document.addEventListener('DOMContentLoaded', function() {
-    initializeLanguage();
+// ページの読み込みが完了したら実行する処理があればここに書く
+document.addEventListener('DOMContentLoaded', () => {
+    if (!location.hash) {
+        location.hash = '#home';
+    }
+    const headerHeight = document.querySelector('.site-header').offsetHeight;
+    const navHeight = document.querySelector('.navigation').offsetHeight;
+    const html = document.documentElement;
+    html.style.scrollPaddingTop = `${headerHeight + navHeight}px`;
 });
 
 /**
  * 言語設定関数
  * @param {string} lang - 'ja' または 'en'
  */
-function setLanguage(lang) {
+async function setLanguage(lang) {
     if (lang !== 'ja' && lang !== 'en') {
         lang = 'en'; // 不正な値の場合は英語にフォールバック
     }
@@ -18,7 +24,7 @@ function setLanguage(lang) {
 /**
  * ページの初回読み込み時に言語を初期化する
  */
-function initializeLanguage() {
+async function initializeLanguage() {
     // 1. 保存された言語設定を取得
     const savedLang = localStorage.getItem('userLanguage');
     const browserLang = navigator.language.split('-')[0];
@@ -38,7 +44,7 @@ function initializeLanguage() {
  * @param {string} url - 読み込むHTMLのURL
  * @param {string} elementId - 挿入先の要素ID
  */
-function loadHTML(url, elementId) {
+async function loadContent(url, elementId) {
   fetch(url)
     .then(response => response.text())
     .then(html => {
@@ -48,7 +54,7 @@ function loadHTML(url, elementId) {
 }
 
 // フッターの著作権年を動的に設定する関数
-function setCopyrightYear() {
+async function setCopyrightYear() {
     const currentYear = new Date().getFullYear();
     const yearElement = document.getElementById('current-year');
     if (yearElement) {
@@ -59,7 +65,7 @@ function setCopyrightYear() {
 /**
  * publications を表示する関数
  */
-function displayPublications(jsonPath, targets) {
+async function displayPublications(jsonPath, targets) {
     const table_dict = {}
     for (const key of targets) {
         table_dict[key] = document.getElementById(key);

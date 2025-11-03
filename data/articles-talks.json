@@ -1,0 +1,66 @@
+[
+    {
+        "lang": "en",
+        "type": "article / talk / press",
+        "author": "Example Authors",
+        "title": "Example Paper Title",
+        "where": "Example Conference",
+        "year": "2024",
+        "month": "July",
+        "note": "Example",
+        "url": "https://example.com",
+        "urls": {
+            "full": "https://example.com/fulltext.pdf",
+            "slide": "https://example.com/slides.pdf",
+            "code": "https://example.com/code.zip"
+        }
+    },
+    {
+        "lang": "ja",
+        "type": "article",
+        "author": "鈴木 浩史",
+        "title": "ECML PKDD 2024 参加報告",
+        "where": "日本データベース学会 Newsletter 2024年10月号 (Vol.17, No. 5)",
+        "year": "2024",
+        "month": "10",
+        "note": null,
+        "url": "https://dbsj.org/newsletter-vol-17-no-5/",
+        "urls": null
+    },
+    {
+        "lang": "ja",
+        "type": "press",
+        "author": "鈴木 浩史",
+        "title": "ECML-PKDD 2024 にて統計的因果探索の代表的モデル LiNGAM の高速な学習法 LayeredLiNGAM について発表しました",
+        "where": "Fujitsu TECH BLOG",
+        "year": "2024",
+        "month": "9",
+        "note": null,
+        "url": "https://blog.fltech.dev/entry/2024/09/12/ecmlpkdd2024-layeredlingam-ja",
+        "urls": null
+    },
+    {
+        "lang": "ja",
+        "type": "talk",
+        "author": "鈴木 浩史",
+        "title": "意思決定支援の革新に向けた大規模・異種データからの因果探索",
+        "where": "理研AIP成果報告イベント「数理研究からAI産業を変革する」",
+        "year": "2025",
+        "month": "8",
+        "note": null,
+        "url": "https://www.youtube.com/watch?v=R_kw388DZgQ",
+        "urls": null
+    },
+    {
+        "lang": "ja",
+        "type": "talk",
+        "author": "鈴木 浩史",
+        "title": "Explainable and Local Correction of Classification Models Using Decision Trees",
+        "where": "JSSST2022 トップカンファレンス・トップ論文誌特別講演 (MLSE)",
+        "year": "2022",
+        "month": "8",
+        "note": null,
+        "url": "https://www.youtube.com/watch?v=WPI5vzQzX-o",
+        "urls": null
+    }
+]

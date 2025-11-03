@@ -1,0 +1,173 @@
+/* ----------
+ * 基本リセットと共通設定
+ * ---------- */
+:root {
+    --primary-color: #333;
+    --secondary-color: #555;
+    --tertiary-color: #777;
+    --fourth-color: #999;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: var(--primary-color);
+}
+
+.site-header, .navigation, .main-content, .site-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ----------
+ * ヘッダーのプロフィールセクション
+ * ---------- */
+.site-header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.profile-branding {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-grow: 0;
+    padding: 0 30px;
+}
+
+/* 写真のコンテナ */
+.profile-photo-container {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 3px solid #fff;
+}
+.profile-photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* 名前と肩書きの調整 */
+.profile-info {
+    line-height: 1.4;
+}
+.profile-info .name {
+    font-size: 1.5em;
+    margin: 0;
+}
+.profile-info .title {
+    font-size: 1em;
+    color: #ccc;
+    margin-top: 5px;
+}
+.profile-info .contact {
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* 言語スイッチャー */
+.profile-info .lang-switcher {
+    margin-top: 10px;
+    font-size: 1em; 
+}
+.lang-switcher button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: 0px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.8em;
+    margin-right: 5px;
+    width: 80px;
+    text-align: center;
+}
+.lang-switcher button:hover {
+    background-color: var(--tertiary-color);
+}
+.profile-info .lang-switcher button:last-child {
+    margin-right: 0;
+}
+
+/* ----------
+ * 言語切り替えロジック
+ * ---------- */
+html:lang(ja) [lang="en"] { display: none; }
+html:lang(ja) [lang="ja"] { display: inline-block; }
+html:lang(en) [lang="ja"] { display: none; }
+html:lang(en) [lang="en"] { display: inline-block; }
+
+/* ----------
+ * ヘッダーとフッター
+ * ---------- */
+.site-header {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    position: relative; /* 言語スイッチャーの配置基準 */
+}
+
+.site-footer {
+    background-color: var(--primary-color);
+    color: #aaa;
+    text-align: center;
+}
+
+/* ----------
+ * ナビゲーション
+ * ---------- */
+.navigation {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.navigation a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.navigation a:hover {
+    background-color: var(--tertiary-color);
+}
+
+/* ----------
+ * メインブロック
+ * ---------- */
+main { background-color: #fff; }
+.container { padding: 10px 30px; }
+.container h2 {
+    color: var(--primary-color);
+    font-weight: normal;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--secondary-color);
+}
+.container li { list-style: none; }
+.container table tr > *:first-child {
+    white-space: nowrap;
+    width: auto;
+    min-width: auto;
+    max-width: auto;
+    vertical-align: top;
+    padding-right: 30px;
+}
+
+/* ----------
+ * スマートフォン用レイアウト (768px以下)
+ * ---------- */

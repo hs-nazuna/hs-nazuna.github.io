@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirofumi Suzuki</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+    <script type="text/javascript">
+        loadHTML('common-header.html', 'header-placeholder');
+    </script>
+
+    <main class="main-content">
+        <article class="container">
+            <h2>
+                <span lang="ja">国際会議 (査読あり)</span>
+                <span lang="en">International Conference (Peer Reviewed)</span>
+            </h2>
+            <table id="conference"></table>
+        </article>
+
+        <article class="container">
+            <h2>
+                <span lang="ja">論文誌 (査読あり)</span>
+                <span lang="en">Journal Papers (Peer Reviewed)</span>
+            </h2>
+            <table id="journal"></table>
+        </article>
+
+        <article class="container">
+            <h2>
+                <span lang="ja">その他 (国内会議など)</span>
+                <span lang="en">Misc (Domestic Conferences, etc.)</span>
+            </h2>
+            <table id="misc"></table>
+        </article>
+    </main>
+    <script type="text/javascript">
+        displayPublications('data/publications.json', ['conference', 'journal', 'misc']);
+    </script>
+
+    <footer class="site-footer">
+        <p>
+            &copy; <span id="current-year"></span>
+            <span lang="ja">鈴木 浩史.</span>
+            <span lang="en">Hirofumi Suzuki.</span>
+            All Rights Reserved.
+        </p>
+    </footer>
+    <script type="text/javascript">
+        setCopyrightYear();
+    </script>
+</body>
+</html>

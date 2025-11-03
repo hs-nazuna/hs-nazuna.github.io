@@ -1,227 +1,84 @@
 <!DOCTYPE html>
-<html lang='ja'>
-
-<!-- header -->
+<html lang="ja">
 <head>
-
-<meta charset='UTF-8'>
-<meta name='keywords' content='鈴木, 浩史, ZDD, BDD, decision diagram'>
-<meta name='description' content='鈴木浩史のページ'>
-<meta name='author' content='Hirofumi Suzuki'>
-<meta name='robots' content='index,follow'>
-
-
-
-<!-- Scripts -->
-<script type='text/javascript' src='main-menu.js'></script>
-<script type='text/javascript' src='links.js'></script>
-
-<script type='text/x-mathjax-config'>
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['¥¥(','¥¥)']],
-    processEscapes: true
-  },
-  CommonHTML: { matchFontHeight: false }
-});
-</script>
-<script async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML'></script>
-
-<script src='https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js'></script>
-<!-- Scripts -->
-
-
-
-<title>鈴木浩史 - 博士（情報科学）</title>
-<link href='style.css' rel='stylesheet' type='text/css'/>
-<!-- <link rel='icon' type='image/png' href='images/twitter-icon.jpg'> -->
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirofumi Suzuki - Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
 </head>
 
-
-
-<!-- body -->
 <body>
+    <div id="header-placeholder"></div>
+    <script type="text/javascript">
+        loadHTML('common-header.html', 'header-placeholder');
+    </script>
 
+    <main class="main-content">
+        <article class="container">
+            <h2>
+                <span lang="ja">研究テーマ</span>
+                <span lang="en">Research Interests</span>
+            </h2>
+            <div lang="ja">
+                <ul>
+                    <li><strong>説明可能AI</strong>: 決定木, ルールアンサンブル</li>
+                    <li><strong>因果探索</strong>: Linear Non-Gaussian Acyclic Models, Causal Additive Models</li>
+                    <li><strong>離散アルゴリズム</strong>: ルールマイニング, グラフ列挙, 組合せ最適化, 決定グラフ</li>
+                </ul>
+            </div>
+            <div lang="en">
+                <ul>
+                    <li><strong>Explainable AI</strong>: Decision Trees, Rule Ensembles</li>
+                    <li><strong>Causal Discovery</strong>: Linear Non-Gaussian Acyclic Models, Causal Additive Models</li>
+                    <li><strong>Discrete Algorithms</strong>: Rule Mining, Graph Enumeration, Discrete Optimization, Decision Diagrams</li>
+                </ul>
+            </div>
+        </article>
 
+        <article class="container">
+            <h2>
+                <span lang="ja">その他の興味</span>
+                <span lang="en">Other Interests</span>
+            </h2>
+            <div lang="ja">
+                <ul>
+                    <li><strong>競技プログラミング</strong>: 2012年頃からハンドルネーム "tsukasa_diary" で活動</li>
+                    <li><strong>アルゴリズム実装</strong>: C++ による高速なアルゴリズムの実装, Cython と Python を用いたソフトウェア開発</li>
+                </ul>
+            </div>
+            <div lang="en">
+                <ul>
+                    <li><strong>Competitive Programming</strong>: Active since around 2012 under the handle name "tsukasa_diary"</li>
+                    <li><strong>Algorithm Implementation</strong>: Efficient algorithm implementation in C++, Software development using Cython and Python</li>
+                </ul>
+            </div>
+        </article>
 
-<!-- メインコンテナ -->
-<div id='main_container'>
+        <div class="container">
+            <h2>
+                <span lang="ja">リンク</span>
+                <span lang="en">Links</span>
+            </h2>
+            <ul>
+                <li><a href="https://scholar.google.co.jp/citations?user=qKW0e-UAAAAJ&hl=ja&oi=ao"
+                       target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+                <li><a href="https://researchmap.jp/hirofumi_suzuki"
+                       target="_blank" rel="noopener noreferrer">researchmap</a></li>
+            </ul>
+        </div>
+    </main>
 
-
-
-<!-- タイトル -->
-<header id='page_title'>
-<h1>鈴木 浩史</h1>
-すずき ひろふみ
-<address>
-h.suzuki.lskp (at) gmail.com / suzuki-hirofumi (at) fujitsu.com
-</address>
-<a href='index-e.html'>English Page</a>
-</header>
-
-
-
-<!-- コンテンツ -->
-<script type='text/javascript'>
-document.open();
-document.write(menu);
-document.close();
-</script>
-
-<script type='text/javascript'>
-document.open();
-document.write(links);
-document.close();
-</script>
-
-
-<!-- メインテキスト -->
-<div id='main_text'>
-
-<!-- 記事 -->
-<section id='profile'>
-<h2>プロフィール</h2>
-
-<h3>所属</h3>
-富士通株式会社　人工知能研究所
-
-<h3>経歴</h3>
-<ul>
-  <li>2014年3月 宇都宮大学 工学部 情報工学科 卒業</li>
-  <li>2016年3月 北海道大学 大学院 情報科学研究科 修士課程 卒業</li>
-  <li>2019年3月 北海道大学 大学院 情報科学研究科 博士課程 卒業</li>
-  <li>2019年4月-現在 富士通研究所（富士通株式会社 人工知能研究所）研究員</li>
-</ul>
-
-<h3>研究テーマ</h3>
-<ul class='oneline'>
-  <li>組合せ列挙</li>
-  <li>データ構造 (BDD, ZDD)</li>
-  <li>説明可能AI</li>
-  <li>因果探索</li>
-</ul>
-
-<h3>趣味</h3>
-<ul class='oneline'>
-  <li>競技プログラミング (TopCoder，AtCoder，など．過去にICPC出場経験あり)</li>
-  <li>音楽ゲーム (CHUNITHM, オンゲキ, ノスタルジア)</li>
-  <li>弓道 (高校〜学部までは活発でした．)</li>
-</ul>
-</section>
-
-
-
-<section id='achievements'>
-<h2>業績リスト</h2>
-
-<h3>論文誌</h3>
-<ol>
-  <li><u>Hirofumi Suzuki</u> and Shin-ichi Minato: "Fast Enumeration of All Pareto-Optimal Solutions for 0-1 Multi-Objective Knapsack Problems Using ZDDs," IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences, Sep. 2018.</li>
-</ol>
-
-<h3>国際会議（査読あり）</h3>
-<ol>
-  <li><u>Hirofumi Suzuki</u>:
-    <a href="https://link.springer.com/chapter/10.1007/978-3-031-70365-2_13">LayeredLiNGAM: A Practical and Fast Method for Learning a Linear Non-Gaussian Structural Equation Model,"</a>
-    In Proc. of European Conference on Machine Learning and Principles and
-    Practice of Knowledge Discovery in Databases (ECML PKDD) 2024</li>
-    <li><u>Hirofumi Suzuki</u>, Hiroaki Iwashita, Takuya Takagi, Keisuke Goto, Yuta Fujishige, Satoshi Hara:
-      <a href="https://ieeexplore.ieee.org/document/10415666">"Rule Mining for Correcting Classification Models",</a>
-      In Proc. of the 23rd IEEE International Conference on Data Mining (ICDM'23), Dec. 2023 (short paper).
-      <a href="https://arxiv.org/abs/2310.06446">[full version]</a></li>
-  <li><u>Hirofumi Suzuki</u>, Hiroaki Iwashita, Takuya Takagi, Keisuke Goto, Yuta Fujishige, Satoshi Hara: <a href="https://ojs.aaai.org/index.php/AAAI/article/view/20816">Explainable and Local Correction of Classification Models Using Decision Trees"</a>, In Proc. of the 36th AAAI Conference on Artificial Intelligence (AAAI'22), Feb. 2022.</li>
-  <li><u>Hirofumi Suzuki</u>, Masakazu Ishihata and Shin-Ichi Minato: <a href="https://link.springer.com/chapter/10.1007/978-3-030-39881-1_23">"Designing Survivable Networks with Zero-suppressed Binary Decision Diagrams,"</a> In Proc. of the 14th International Conference and Workshop on Algorithms and Computation (WALCOM), Mar. 2020.</li>
-  <li>Jun Kawahara, Toshiki Saitoh, <u>Hirofumi Suzuki</u> and Ryo Yoshinaka: <a href="https://link.springer.com/chapter/10.1007/978-3-030-34029-2_9">"Colorful Frontier-based Search: Implicit Enumeration of Chordal and Interval Subgraphs,"</a> In Proc. of the Special Event on Analysis of Experimental Algorithms (SEA^2 2019), June. 2019.</li>
-  <li><u>Hirofumi Suzuki</u>, Masakazu Ishihata, and Shin-ichi Minato: <a href="https://link.springer.com/chapter/10.1007/978-3-030-04651-4_19">"Exact Computation of Strongly Connected Reliability by Binary Decision Diagrams,"</a> In Proc. of the 12th Annual International Conference on Combinatorial Optimization and Applications (COCOA 2018), Dec. 2018.</li>
-  <li>Takanori Maehara, <u>Hirofumi Suzuki</u> and Masakazu Ishihata (2017): <a href="http://dl.acm.org/citation.cfm?id=3052567&CFID=635666092&CFTOKEN=88804647">"Exact Computation of Influence Spread by Binary Decision Diagrams,"</a> In Proc. of the 26th International World Wide Conference (WWW'17), Perth, Australia, April 3rd--7th, 2017, pp. 947--956.</li>
-  <li>Jun Kawahara, Toshiki Saitoh, <u>Hirofumi Suzuki</u>, and Ryo Yoshinaka, 
-  <a href="https://link.springer.com/chapter/10.1007%2F978-3-319-48517-1_26">"Solving the longest oneway-ticket problem and enumerating letter graphs by augmenting the two representative approaches with ZDDs,"</a>
-  Computational Intelligence in Information Systems: In Proc. of the Computational Intelligence in Information Systems Conference (CIIS 2016), vol. 532, pp. 294-305</li>
-  <li><u>Hirofumi Suzuki</u>, Sun Hao, and Shin-ichi Minato: <a href="https://search.proquest.com/openview/a6ec29375ea0b697f0f569142880f830/1.pdf?pq-origsite=gscholar&cbl=1976343">"Generating All Solutions of Minesweeper Problem Using Degree Constrained Subgraph Model,"</a> In Proc. of the 2016 International Conference on Parallel & Distributed Processing Techniques & Applications (PDPTA'16), a Workshop session of Mathematical Modeling and Problem Solving, pp. 356-362, Jul. 2016.</li>
-</ol>
-
-<h3>国際会議（査読なし）</h3>
-<ol>
-</ol>
-
-<h3>国内研究会等（口頭、ポスター含む）</h3>
-<ol>
-  <li><u>鈴木浩史</u>:
-    "LayeredLiNGAM: Linear Non-Gaussian Structural Equation Model に対する実用的な高速学習法,"
-    人工知能学会第128回人工知能基本問題研究会資料, pp.22-27, Mar. 202</li>
-  <li><u>鈴木 浩史</u>，後藤 啓介，岩下 洋哲，高木 拓也，大堀 耕太郎，原 聡:
-  "ユーザーの納得感を考慮した線形モデルの重み付きLassoによる定式化と一解法,"
-  人工知能学会第112回人工知能基本問題研究会資料, pp. 67-72, Mar. 2020.</li>
-  <li><u>鈴木 浩史</u>，中野 裕太，住谷 陽輔，湊 真一，前田 理: "化学反応経路ネットワークにおけるZDDを用いたエネルギー制限付き経路列挙," 情報処理学会アルゴリズム研究会, 情処研報, 2018-AL-169, No. 7, pp. 1-6, Sep. 2018.</li>
-  <li><u>鈴木 浩史</u>, 石畠 正和, 湊 真一: "ZDD を用いた種々のネットワーク設計問題の解法," 2018年度人工知能学会全国大会（第32回）, 4K2OS16b03, July 2018.</li>
-  <li><u>鈴木 浩史</u>, 湊 真一: "グラフ列挙における構築途中のZDD幅に基づく変数順序づけ法," 情報処理学会第80回全国大会, 7A-01, pp. 1-159-160. Mar. 2018.</li>
-  <li><u>鈴木 浩史</u>, 石畑 正和， 湊真一: "フロンティア法による強連結な部分グラフの列挙," 人工知能学会第104回人工知能基本問題研究会資料, SIG-FPAI-B507, pp. 26-31, Aug. 2017.</li>
-  <li><u>鈴木 浩史</u>, 湊 真一: "ZDDを用いた0-1多目的ナップサック問題のパレート解列挙," 情報処理学会第79回全国大会, 5A-04, Vol. 1, pp. 181-182, Mar. 2017.</li>
-  <li><u>鈴木 浩史</u>, 湊 真一: "ZDDを用いたグラフ列挙索引化における頂点インデックスの追加," 人工知能学会第101回人工知能基本問題研究会資料, SIG-FPAI-B504, pp. 41-46, Aug. 2016.</li>
-  <li><u>鈴木 浩史</u>, 孫 浩, 湊 真一: "BDD/ZDDを用いたマインスイーパーの爆弾配置パタンの列挙," 2016年度人工知能学会全国大会（第30回）, 1D5-OS-02b-3in2, Jun. 2016.</li>
-  <li>井上 祐馬, <u>鈴木 浩史</u>, 伊藤 華, 湊 真一: "グラフの部分構造を列挙するZDD構築のための変数順序付けヒューリスティクス," 2016年度人工知能学会全国大会（第30回）, 1D5-OS-02b-4, Jun. 2016.</li>
-  <li>竹内 文登, <u>鈴木 浩史</u>, 白石 恒介, 安田 宜仁, 湊 真一: "MEET演算を用いた組合せ集合間の類似度の定義と応用," 第14回 情報科学技術フォーラム(FIT2015), F021, 第2分冊, pp. 329-330, Sep. 2015.</li>
-  <li><u>鈴木 浩史</u>, 孫 浩, 湊 真一: " ZDDの幅を制限したフロンティア法によるナンバーリンクの解探索," 情報処理学会DAシンポジウム2015 アルゴリズムデザインコンテスト ポスターセッション, Aug. 2015.</li>
-  <li><u>鈴木 浩史</u>, 湊 真一: "頂点誘導部分グラフを列挙索引化するフロンティア法," 電子情報通信学会コンピュテーション研究会, 信学技報, vol. 115, no. 15, COMP2015-3, pp. 15-20, Apr. 2015.</li>
-  <li><u>鈴木 浩史</u>, 湊 真一: "次数制約を満たす部分グラフを列挙するためのフロンティア法の効率化," 電子情報通信学会2015総合大会, DS-1-7, pp. S-13-14, Mar. 2015.</li>
-  <li>安田 宜仁, <u>鈴木 浩史</u>, 岩下 洋哲, 中澤 吉男, 湊 真一: "ZDDに基づくグラフ列挙ツールGraphillionを用いたナンバーリンクの解法," 情報処理学会DAシンポジウム2014 アルゴリズムデザインコンテスト ポスターセッション, Aug. 2014.</li>
-</ol>
-
-<h3>Technical Report</h3>
-<ol>
-  <li><u>Hirofumi Suzuki</u> and Shin-ichi Minato (2017): <a href="http://www-alg.ist.hokudai.ac.jp/~thomas/TCSTR/tcstr_17_81/tcstr_17_81.pdf">"ZDD-Based Enumeration of Pareto-Optimal Solutions for 0-1 Multi-Objective Knapsack Problems,"</a> Hokkaido University, TCS-TR-A-17-81, June, 2017</li>
-</ol>
-
-<h3>受賞</h3>
-<ul>
-  <li>鈴木浩史, 栗田和宏, 田中颯一 (チーム tsurasa_diary, コーチ 井上 祐馬) <br>2015年度 ICPC国内予選 24位（372チーム中）</li>
-  <li>鈴木浩史, 栗田和宏, 田中颯一 (チーム tsurasa_diary, コーチ 井上 祐馬) <br>2015年度 ICPC台湾大会 大学別10位（40大学中）</li>
-  <li>北海道大学 大学院 情報科学研究科 研究科長賞 (2015年度)
-  <a href='http://www.ist.hokudai.ac.jp/news/n1606.html' target='_blank'>&dagger;</a></li>
-  <li>ヤマト運輸プログラミングコンテスト2019 (at AtCoder), 優勝</li>
-  <li>第4回 Asprova プログラミングコンテスト (at AtCoder), 6位入賞</li>
-  <li>第5回 Asprova プログラミングコンテスト (at AtCoder), 特別賞（テストの意味を実感できたで賞：暫定上位のはずがシステムテストでエラーが発覚）</li>
-  <li>第6回 Asprova プログラミングコンテスト (at AtCoder), 7位入賞</li>
-  </li>
-</ul>
-
-<h3>参加中のプロジェクト等</h3>
-<ul>
-  <li><a href='http://acm-icpc.aitea.net/' target='_blank'>ACM-ICPC OB/OG の会</a></li>
-</ul>
-
-<h3>過去に参加したプロジェクト等</h3>
-<ul>
-  <li><a href='http://hcpc.web.fc2.com/' target='_blank'>北海道大学 競技プログラミングサークル</a></li>
-  <li><a href='https://www-erato.ist.hokudai.ac.jp/' target='_blank'>基盤S離散構造処理系プロジェクト</a> (リサーチアシスタント) </li>
-</ul>
-
-<h3>教育・指導経験</h3>
-<ul>
-  <li>北海道大学 ティーチングフェロー 「情報理工学演習」 (2016年度)</li>
-  <li>北海学園大学 非常勤講師 「情報リテラシー演習」 (2016,2017年度)</li>
-</ul>
-</section>
-
-
-
-</div>
-<!-- コンテンツ終わり -->
-
-
-
-<!-- フッター -->
-<footer id='author_info'>
-&copy;2025, Hirofumi Suzuki
-</footer>
-
-
-
-</div>
-<!-- メインコンテナ終わり -->
-
-
+    <footer class="site-footer">
+        <p>
+            &copy; <span id="current-year"></span>
+            <span lang="ja">鈴木 浩史.</span>
+            <span lang="en">Hirofumi Suzuki.</span>
+            All Rights Reserved.
+        </p>
+    </footer>
+    <script type="text/javascript">
+        setCopyrightYear();
+    </script>
 </body>
-
 </html>

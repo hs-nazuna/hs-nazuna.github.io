@@ -17,6 +17,18 @@
     },
     {
         "lang": "ja",
+        "type": "talk",
+        "author": "鈴木 浩史",
+        "title": "実践的な課題に動機づけられた因果探索の技術開発",
+        "where": "The 1st Causal Frontier Forum (第1回 因果フォーラム)",
+        "year": "2026",
+        "month": "1",
+        "note": null,
+        "url": "https://www.shimizulab.org/lab/causalws/1st-forum",
+        "urls": null
+    },
+    {
+        "lang": "ja",
         "type": "article",
         "author": "鈴木 浩史",
         "title": "ECML PKDD 2024 参加報告",

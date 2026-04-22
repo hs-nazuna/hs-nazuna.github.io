@@ -18,6 +18,50 @@
     {
         "lang": "en",
         "type": "conference",
+        "author": "Hirofumi Suzuki, Kentaro Kanamori, Takuya Takagi, Thong Pham, Takashi Nicholas Maeda, Shohei Shimizu",
+        "title": "I-CAM-UV: Integrating Causal Graphs over Non-Identical Variable Sets Using Causal Additive Models with Unobserved Variables",
+        "where": "In Proc. of the AAAI Conference on Artificial Intelligence",
+        "year": "2026",
+        "month": "Feb",
+        "note": null,
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/39772",
+        "urls": {
+            "full": "https://arxiv.org/html/2603.03207v1",
+            "slide": null,
+            "code": null
+        }
+    },
+    {
+        "lang": "en",
+        "type": "conference",
+        "author": "Kentaro Kanamori, Hirofumi Suzuki, Takuya Takagi",
+        "title": "Sparse Additive Model Pruning for Order-Based Causal Structure Learning",
+        "where": "In Proc. of the AAAI Conference on Artificial Intelligence",
+        "year": "2026",
+        "month": "Feb",
+        "note": null,
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/39408",
+        "urls": {
+            "full": "https://arxiv.org/abs/2602.15306",
+            "slide": null,
+            "code": null
+        }
+    },
+    {
+        "lang": "ja",
+        "type": "misc",
+        "author": "鈴木浩史",
+        "title": "特徴量の離散化が不要な準最適決定木に向けて",
+        "where": "人工知能学会第128回人工知能基本問題研究会",
+        "year": "2026",
+        "month": "1",
+        "note": null,
+        "url": null,
+        "urls": null
+    },
+    {
+        "lang": "en",
+        "type": "conference",
         "author": "Hirofumi Suzuki",
         "title": "LayeredLiNGAM: A Practical and Fast Method for Learning a Linear Non-gaussian Structural Equation Model",
         "where": "In Proc. of European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD)",

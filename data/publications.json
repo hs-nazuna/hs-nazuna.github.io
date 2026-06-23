@@ -18,6 +18,22 @@
     {
         "lang": "en",
         "type": "conference",
+        "author": "Hirofumi Suzuki",
+        "title": "Backward Compatibility in Tree-Based Explanations and Enhanced CART Algorithm",
+        "where": "In Proc. of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)",
+        "year": "2026",
+        "month": "Aug",
+        "note": "to appear",
+        "url": null,
+        "urls": {
+            "full": null,
+            "slide": null,
+            "code": "https://github.com/hs-nazuna/cart-bctx"
+        }
+    },
+    {
+        "lang": "en",
+        "type": "conference",
         "author": "Hirofumi Suzuki, Kentaro Kanamori, Takuya Takagi, Thong Pham, Takashi Nicholas Maeda, Shohei Shimizu",
         "title": "I-CAM-UV: Integrating Causal Graphs over Non-Identical Variable Sets Using Causal Additive Models with Unobserved Variables",
         "where": "In Proc. of the AAAI Conference on Artificial Intelligence",
